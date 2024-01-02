@@ -84,7 +84,7 @@ const Home = () => {
     <div>
       <div className='my-3 mx-3'>
         <div className='row mx-2'>
-          <div className='col-3'>
+          <div className='col-lg-3 col-md-6 col-sm-12'>
             <h6>Choose a Date</h6>
             <input
               type='date'
@@ -94,7 +94,7 @@ const Home = () => {
               onChange={(e) => setSelectedDate(e.target.value)}
             />
           </div>
-          <div className='col-3'>
+          <div className='col-lg-3 col-md-6 col-sm-12'>
             <h6>Choose a Category</h6>
             {events && events.length > 0 && (
               <Autocomplete
@@ -113,7 +113,7 @@ const Home = () => {
               />
             )}
           </div>
-          <div className='col-3'>
+          <div className='col-lg-3 col-md-6 col-sm-12'>
             <h6>Choose a Location</h6>
             {events && events.length > 0 && (
               <Autocomplete
@@ -132,7 +132,7 @@ const Home = () => {
               />
             )}
           </div>
-          <div className='col-3'>
+          <div className='col-lg-3 col-md-6 col-sm-12'>
             <h6>Search With Event Name</h6>
             <Autocomplete
               id='event-name-search'
@@ -158,7 +158,7 @@ const Home = () => {
           </div>
         ) : (
           filteredEvents.map((event) => (
-            <div className='col-3 my-3' key={event._id}>
+            <div className='col-lg-3 col-md-6 col-sm-12 my-3' key={event._id}>
               <EventItem
                 key={event._id}
                 id={event.id}

@@ -116,7 +116,7 @@ const Users = () => {
 {/* map function to display all events created by the user */}
 <div className='row'>
         {userEvents.map((event) => (
-          <div className='col-3  my-3' key={event._id}>
+          <div className='col-lg-3 col-md-6 col-sm-12  my-3' key={event._id}>
           <EventItem key={event._id} id={event.id} eventname={event.eventname} image={event.image} startdate={event.startdate} enddate={event.enddate} description={event.description} />
           </div>
         ))}
